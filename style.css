@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #faf8f4;
+    background-color: #070707;
     color: #333;
 }
 
@@ -65,8 +65,9 @@ main {
     grid-gap: 20px;
 }
 
-.service {
-    background-color: #2e3c49;
+.service-wrap {
+    background-color: #d71105;
+    /*#2e3c49*/
     padding: 20px;
     text-align: center;
     color: white;
