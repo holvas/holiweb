@@ -187,6 +187,16 @@ footer {
     font-size: 0.9em;
 }
 
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-info p {
+    padding-bottom: 6px;
+}
 .footer-logo {
     padding-bottom: 10px;
     font-weight: 700;
@@ -199,4 +209,7 @@ footer a {
 
 footer a:hover {
     color: var(--red);
+}
+.contacts, .nip-regon {
+    text-align: left;
 }
