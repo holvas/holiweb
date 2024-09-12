@@ -6,25 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HoLiWeb</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="HoLiWeb logo">
+            <!-- <img src="logo.png" alt="HoLiWeb logo"> -->
+            <a href="#">HOLI<span>WEB</span></a>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Про нас</a></li>
-                <li><a href="#" class="active">Пропозиції</a></li>
+                <li><a href="#" class="active">Пропонуємо</a></li>
+                <li><a href="#aboutUs">Про нас</a></li>
                 <li><a href="#">Портфоліо</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Контакти</a></li>
             </ul>
         </nav>
+
         <div class="languages">
-            <a href="#">UA</a>
+            <a href="#" class="active">UA</a>
             <a href="#">PL</a>
             <a href="#">DE</a>
             <a href="#">EN</a>
@@ -32,37 +44,59 @@
     </header>
 
     <main>
-        <section class="service-grid">
+        <h1 class="title-text">Допомагаємо вашому бізнесу бути видимим і успішним в онлайн-просторі</h1>
+        <section>
+            <!-- <h2 id="aboutUs">Дізнайся більше про компанію HoLiWeb</h2> -->
+            <p>
+                Компанія HoLiWeb – це ваш надійний партнер у сфері комплексної розробки веб-сайтів під ключ та просування бізнесу в інтернеті. Ми спеціалізуємось на наданні широкого спектру послуг, які допоможуть вашому бізнесу досягти успіху в онлайн-просторі. У сучасному світі важливо не лише створити якісний сайт або веб-додаток, але й забезпечити його видимість у пошукових системах, таких як Google. Наша команда експертів допомагає досягати цього завдяки інноваційним рішенням та використанню сучасних технологій.
+            </p>
+            
+        </section>
+        
+        <section class="service-grid"> 
             <div class="service-wrap">
-                <div class="service-img">
+                <div class="service-title">
                     <h2>UI/UX дизайн</h2>
                 </div>
-                <div>
-                    <img src="desine.jpg" alt="Desine">
+                <div class="service-img">
+                    <img src="./img/desine1.jpg" alt="Desiners of company in office">
                 </div>
-                <div>
+                <div class="service-title">
                     <h2>Графічний дизайн</h2>
                 </div>
             </div>
             <div class="service-wrap">
-                <h2>Web Розробка</h2>
-                <img src="develope.jpg" alt="Develope">
-                <h2>Супровід сайтів</h2>
+                <div class="service-title">
+                    <h2>Web Розробка</h2>
+                </div>
+                <div class="service-img">
+                    <img src="./img/develope1.jpg" alt="Develope">
+                </div>
+                <div class="service-title">
+                    <h2>Супровід сайтів</h2>
+                </div>
             </div>
             <div class="service-wrap">
-                <h2>Цифровий маркетинг</h2>
-                <img src="opracowania.jpg" alt="Opracowania">
-                <h2>SEO</h2>
+                <div class="service-title">
+                    <h2>Цифровий маркетинг</h2>
+                </div>
+                 <div class="service-img">
+                    <img src="./img/digitalmarketing1.jpg" alt="Opracowania">
+                 </div>
+                <div class="service-title">
+                    <h2>SEO</h2>
+                </div>
+                
             </div>
         </section>
     </main>
 
     <footer>
-        <p>HoLiWeb</p>
-        <p>Chorwacka 54/2, 51-107 Wrocław, Polska</p>
-        <p><a href="mailto:holiweb@gmail.com">info@holiweb.com</a></p>
-        <p>+48 736 222 757</p>
-        <p>©2024 зроблено HoLiWEB</p>
+        <p class="footer-logo">HOLI<span>WEB</span></p>
+        <p class="regon">Chorwacka 54/2, 51-107 Wrocław, Polska</p>
+        <p class="contacts"><a href="mailto:holiweb@gmail.com">info@holiweb.com</a></p>
+        <p><a href="tel:+48736222757">+48 736 222 757</a></p>
+        <p>©2024 HoLiWeb</p>
     </footer>
 </body>
   
