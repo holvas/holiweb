@@ -18,101 +18,194 @@
     />
     <link rel="stylesheet" href="./css/style.css">
 </head>
+    <body>
+        <!--HEADER-->
+        <header>
+            <div class="logo">
+                <!-- <img src="logo.png" alt="HoLiWeb logo"> -->
+                <a href="#">HOLI<span>WEB</span></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Пропонуємо</a></li>
+                    <li><a href="#aboutUs">Про нас</a></li>
+                    <li><a href="#">Портфоліо</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
 
-<body>
-    <header>
-        <div class="logo">
-            <!-- <img src="logo.png" alt="HoLiWeb logo"> -->
-            <a href="#">HOLI<span>WEB</span></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#" class="active">Пропонуємо</a></li>
-                <li><a href="#aboutUs">Про нас</a></li>
-                <li><a href="#">Портфоліо</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Контакти</a></li>
-            </ul>
-        </nav>
+            <div class="languages">
+                <a href="#" class="active">UA</a>
+                <a href="#">PL</a>
+                <a href="#">DE</a>
+                <a href="#">EN</a>
+            </div>
 
-        <div class="languages">
-            <a href="#" class="active">UA</a>
-            <a href="#">PL</a>
-            <a href="#">DE</a>
-            <a href="#">EN</a>
-        </div>
-    </header>
+            <button type="button" class="menu-open-btn" data-menu-open>
+                <svg class="icon-menu-btn" width="32px" height="21px">
+                    <use href="./img/icons.svg#icon-menu-hamburger"></use>
+                </svg>
+            </button>
 
-    <main>
-        <section class="service-text">
-            <h1 class="title-text">Допомагаємо вашому бізнесу бути видимим і успішним в онлайн-просторі</h1>
-            <!-- <h2 id="aboutUs">Дізнайся більше про компанію HoLiWeb</h2> -->
-            <p>
-                Компанія HoLiWeb – це ваш надійний партнер у сфері комплексної розробки веб-сайтів під ключ та просування бізнесу в інтернеті. Ми спеціалізуємось на наданні широкого спектру послуг, які допоможуть вашому бізнесу досягти успіху в онлайн-просторі. У сучасному світі важливо не лише створити якісний сайт або веб-додаток, але й забезпечити його видимість у пошукових системах, таких як Google. Наша команда експертів допомагає досягати цього завдяки інноваційним рішенням та використанню сучасних технологій.
-            </p>
-        </section>
-        
-        <section class="service-grid"> 
-            <div class="service-wrap">
-                <div class="service-title">
-                    <h2>UI/UX дизайн</h2>
-                </div>
-                <div class="service-img">
-                    <img src="./img/desine.jpg" alt="Desiners of company in office">
-                </div>
-                <div class="service-title">
-                    <h2>Графічний дизайн</h2>
+            <!--MOBILE MENU-->
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="container-mob-menu">
+                    <div>
+                        <button type="button" class="modal-close-btn" data-menu-close>
+                            <svg width="8px" height="8px">
+                                <use href="./img/icons.svg#icon-close-button"></use>
+                            </svg>
+                        </button>
+                        
+                        <nav>
+                            <ul class="mob-menu-list">
+                                <li class="mob-menu-item"><a class ="mob-menu-link active" href="./index.html">Пропонуємо</a></li>
+                                <li class="mob-menu-item"><a class ="mob-menu-link" href="#">Про нас</a></li>
+                                <li class="mob-menu-item"><a class ="mob-menu-link" href="#">Портфоліо</a></li>
+                                <li class="mob-menu-item"><a class ="mob-menu-link" href="#">Blog</a></li>
+                                <li class="mob-menu-item"><a class ="mob-menu-link" href="#">Контакти</a></li>
+                            </ul>
+                        </nav> 
+                    </div>
+
+                    <div>
+                        <address class="mob-address">
+                            <ul class="mob-top-contacts list">
+                                <li class="mob-address-item">
+                                    <a class="mob-mail" href="mailto:holiweb@gmail.com">info@holiweb.com</a>
+                                </li>
+                                <li class="mob-address-item">
+                                    <a class="mob-tel" href="tel:+48736222757">+48 736 222 757</a>
+                                </li>
+                            </ul>
+                        </address>
+                            
+                        <!-- <ul class="mob-soc-list">
+                            <li class="mob-soc-items">
+                                <a href="https://www.instagram.com" class="mob-soc-link link" target="_blank" rel="noreferrer noopener">
+                                <svg class="soc-icons" width="24px" height="24px">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="mob-soc-items">
+                                <a
+                                href="https://twitter.com/"
+                                class="mob-soc-link link"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                >
+                                <svg class="soc-icons" width="24px" height="24px">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="mob-soc-items">
+                                <a
+                                href="https://www.facebook.com/"
+                                class="mob-soc-link link"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                >
+                                <svg class="soc-icons" width="24px" height="24px">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="mob-soc-items">
+                                <a
+                                href="https://linkedin.com/"
+                                class="mob-soc-link link"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                >
+                                <svg class="soc-icons" width="24px" height="24px">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                                </a>
+                            </li>
+                        </ul> -->
+                    </div>
                 </div>
             </div>
-            <div class="service-wrap">
-                <div class="service-title">
-                    <h2>Web Розробка</h2>
-                </div>
-                <div class="service-img">
-                    <img src="./img/develope.jpg" alt="HoLiWeb developend office">
-                </div>
-                <div class="service-title">
-                    <h2>Супровід сайтів</h2>
-                </div>
-            </div>
-            <div class="service-wrap">
-                <div class="service-title">
-                    <h2>Цифровий маркетинг</h2>
-                </div>
-                 <div class="service-img">
-                    <img src="./img/digitalmarketing.jpg" alt="HoLiWeb digital marketing office">
-                 </div>
-                <div class="service-title">
-                    <h2>SEO</h2>
-                </div>
-                
-            </div>
-        </section>
+        </header>
 
-        <section class="service-text">
-            <h2>Чому обирають HoLiWeb?</h2>
-            <p class="item-service-text">
-                Наша компанія орієнтована на результат і прагне зробити все для того, щоб ваш бізнес досяг успіху в онлайн-просторі. Ми пропонуємо комплексні рішення, які включають розробку, оптимізацію та просування. Наша команда професіоналів завжди готова запропонувати інноваційні рішення, що допоможуть вашому бізнесу рости та розвиватися.
-                З HoLiWeb ви отримаєте не просто сайт чи додаток, а повноцінний інструмент для досягнення бізнес-цілей та досягнення успіху бізнесу в онлайн-просторі.
-                Зверніться до нас і переконайтесь у якості наших послуг вже сьогодні!
-            </p> 
-            <button class="btn">Розрахувати вартість послуги</button>
-        </section>
-    </main>
+        <main>
+            <!--ABOUT US-->
+            <section class="service-text">
+                <h1 class="title-text">Допомагаємо вашому бізнесу бути видимим і успішним в онлайн-просторі</h1>
+                <!-- <h2 id="aboutUs">Дізнайся більше про компанію HoLiWeb</h2> -->
+                <p>
+                    Компанія HoLiWeb – це ваш надійний партнер у сфері комплексної розробки веб-сайтів під ключ та просування бізнесу в інтернеті. Ми спеціалізуємось на наданні широкого спектру послуг, які допоможуть вашому бізнесу досягти успіху в онлайн-просторі. У сучасному світі важливо не лише створити якісний сайт або веб-додаток, але й забезпечити його видимість у пошукових системах, таких як Google. Наша команда експертів допомагає досягати цього завдяки інноваційним рішенням та використанню сучасних технологій.
+                </p>
+            </section>
+            <!--OUR SERVICES-->
+            <section class="service-grid"> 
+                <div class="service-wrap">
+                    <div class="service-title">
+                        <h2>UI/UX дизайн</h2>
+                    </div>
+                    <div class="service-img">
+                        <img src="./img/desine.jpg" alt="Desiners of company in office">
+                    </div>
+                    <div class="service-title">
+                        <h2>Графічний дизайн</h2>
+                    </div>
+                </div>
+                <div class="service-wrap">
+                    <div class="service-title">
+                        <h2>Web Розробка</h2>
+                    </div>
+                    <div class="service-img">
+                        <img src="./img/develope.jpg" alt="HoLiWeb developend office">
+                    </div>
+                    <div class="service-title">
+                        <h2>Супровід сайтів</h2>
+                    </div>
+                </div>
+                <div class="service-wrap">
+                    <div class="service-title">
+                        <h2>Цифровий маркетинг</h2>
+                    </div>
+                    <div class="service-img">
+                        <img src="./img/digitalmarketing.jpg" alt="HoLiWeb digital marketing office">
+                    </div>
+                    <div class="service-title">
+                        <h2>SEO</h2>
+                    </div>
+                    
+                </div>
+            </section>
+            <!--WHY HOLIWEB-->
+            <section class="service-text">
+                <h2>Чому обирають HoLiWeb?</h2>
+                <p class="item-service-text">
+                    Наша компанія орієнтована на результат і прагне зробити все для того, щоб ваш бізнес досяг успіху в онлайн-просторі. Ми пропонуємо комплексні рішення, які включають розробку, оптимізацію та просування. Наша команда професіоналів завжди готова запропонувати інноваційні рішення, що допоможуть вашому бізнесу рости та розвиватися.
+                    З HoLiWeb ви отримаєте не просто сайт чи додаток, а повноцінний інструмент для досягнення бізнес-цілей та досягнення успіху бізнесу в онлайн-просторі.
+                    Зверніться до нас і переконайтесь у якості наших послуг вже сьогодні!
+                </p> 
+                <button class="btn">Розрахувати вартість послуги</button>
+            </section>
+        </main>
 
-    <footer>
-        <div class="footer-info">
-            <div class="nip-regon">
-                <p>NIP: 8943112024</p>
-                <p>REGON: 526583833</p>
+        <!--FOOTER-->
+        <footer>
+            <div class="footer-info">
+                <div class="nip-regon">
+                    <p>NIP: 8943112024</p>
+                    <p>REGON: 526583833</p>
+                </div>
+                <p class="footer-logo">HOLI<span>WEB</span> © 2024</p>
+                <address class="contacts">
+                    <p>e-mail: <a href="mailto:holiweb@gmail.com">info@holiweb.com</a></p>
+                    <p>tel: <a href="tel:+48736222757">+48 736 222 757</a></p>
+                </address>
             </div>
-            <p class="footer-logo">HOLI<span>WEB</span> © 2024</p>
-            <div class="contacts">
-                <p>e-mail: <a href="mailto:holiweb@gmail.com">info@holiweb.com</a></p>
-                <p>tel: <a href="tel:+48736222757">+48 736 222 757</a></p>
-            </div>
-        </div>
-    </footer>
-</body>
-  
+        </footer>
+    </body>
+
+    <!--JavaScript-->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </html>
