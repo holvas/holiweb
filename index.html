@@ -185,7 +185,7 @@
                     З HoLiWeb ви отримаєте не просто сайт чи додаток, а повноцінний інструмент для досягнення бізнес-цілей та досягнення успіху бізнесу в онлайн-просторі.
                     Зверніться до нас і переконайтесь у якості наших послуг вже сьогодні!
                 </p> 
-                <button class="btn">Розрахувати вартість послуги</button>
+                <button class="btn modal-servise" data-modal-open>Розрахувати вартість послуги</button>
             </section>
         </main>
 
@@ -203,6 +203,92 @@
                 </address>
             </div>
         </footer>
+
+        <!--MODAL WINDOW-->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close-btn" data-modal-close>
+                    <svg width="8" height="8">
+                        <use href="./img/icons.svg#icon-close-button"></use>
+                    </svg>
+                </button>
+
+                <p class="modal-titel">Залиште свої контакти і ми вам передзвонимо</p>
+
+                <form class="modal-form">
+                    <div class="form-items-wraper">
+                        <label for="username" class="label-text">Ім'я</label>
+                        <div class="input-wrap">
+                            <input 
+                                type="text" 
+                                name="username" 
+                                id="username"
+                                class="form-item" 
+                                required 
+                            />
+                            <svg class="form-icons" width="20" height="20">
+                                <use href="./img/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="form-items-wraper">
+                        <label for="phone" class="label-text">Телефон</label>
+                        <div class="input-wrap">
+                            <input 
+                                type="tel" 
+                                name="tel" 
+                                id="phone"
+                                class="form-item"
+                                required
+                            />
+                            <svg class="form-icons" width="20" height="20">
+                                <use href="./img/icons.svg#icon-phone"></use>
+                            </svg>
+                        </div>
+                    </div>
+            
+                    <div class="form-items-wraper">
+                        <label for="mail" class="label-text">Email</label>
+                        <div class="input-wrap">
+                            <input 
+                                type="email" 
+                                name="email" 
+                                id="mail"
+                                class="form-item"
+                            />
+                            <svg class="form-icons" width="20" height="20">
+                                <use href="./img/icons.svg#icon-email"></use>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="form-items-wraper">
+                        <label for="comment" class="label-text">Опишіть яку послугу ви потрибуєте</label>
+                        <textarea id="comment" class="form-item textarea" name="textarea" placeholder="Яку послугу потребуеш дизайн, сайт чи SMM просування бізнесу?" required></textarea>
+                    </div>
+
+                    <div class="privacy-policy">
+                    <input 
+                        type="checkbox" 
+                        name="checkbox" 
+                        id="checkbox"
+                        class="checkbox-input visually-hidden"
+                        required
+                    />
+
+                    <label for="checkbox" class="text-privacy-policy">
+                        Я приймаю положення та умови 
+                        <a href="/" class="link-privacy-policy">Privacy policy</a>
+                    </label>
+                    </div>
+
+                    <button class="services-button btn-form-send" type="submit">
+                        <span class="text-btn">Send</span> 
+                    </button>
+                </form>
+            </div>
+        </div>
     </body>
 
     <!--JavaScript-->
