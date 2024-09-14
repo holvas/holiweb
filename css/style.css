@@ -456,10 +456,15 @@ footer a:hover {
 
 .form-item:focus {
     border-color: var(--focus);
+    box-shadow: 0 0 10px var(--fill);
 }
 
 .form-item:focus + .form-icons {
     fill: var(--focus);
+}
+
+.form-item.error {
+    box-shadow: 0 0 10px var(--red);
 }
 
 .textarea {
@@ -491,12 +496,16 @@ footer a:hover {
 }
 
 .checkbox-input:checked + .text-privacy-policy::before {
-    background-color: var(--pressed-state);
+    background-color: var(--bg-dark);
     background-image: url(./img/icon-click.svg);
     background-repeat: no-repeat;
     background-position: center;
-    border: 1.25px solid var(--pressed-state);
+    border: 1.25px solid var(--bg-dark);
     border-radius: 2px;
+}
+
+.checkbox.error .text-privacy-policy::before {
+    box-shadow: 0 0 var(--red);
 }
 
 .text-privacy-policy {

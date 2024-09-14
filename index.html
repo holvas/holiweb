@@ -10,11 +10,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"/>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -215,7 +215,7 @@
 
                 <p class="modal-titel">Залиште свої контакти і ми вам передзвонимо</p>
 
-                <form class="modal-form" action="/send" method="POST">
+                <form class="modal-form" action="#">
                     <div class="form-items-wraper">
                         <label for="username" class="label-text">Ім'я</label>
                         <div class="input-wrap">
@@ -223,7 +223,7 @@
                                 type="text" 
                                 name="username" 
                                 id="username"
-                                class="form-item" 
+                                class="form-item req" 
                                 required 
                             />
                             <svg class="form-icons" width="20" height="20">
@@ -236,10 +236,10 @@
                         <label for="phone" class="label-text">Телефон</label>
                         <div class="input-wrap">
                             <input 
-                                type="tel" 
-                                name="tel" 
+                                type="number" 
+                                name="phone" 
                                 id="phone"
-                                class="form-item"
+                                class="form-item req"
                                 required
                             />
                             <svg class="form-icons" width="20" height="20">
@@ -249,13 +249,14 @@
                     </div>
             
                     <div class="form-items-wraper">
-                        <label for="mail" class="label-text">Email</label>
+                        <label for="email" class="label-text">Email</label>
                         <div class="input-wrap">
                             <input 
                                 type="email" 
                                 name="email" 
-                                id="mail"
-                                class="form-item"
+                                id="email"
+                                class="form-item req email"
+                                required
                             />
                             <svg class="form-icons" width="20" height="20">
                                 <use href="./img/icons.svg#icon-email"></use>
@@ -265,21 +266,27 @@
 
                     <div class="form-items-wraper">
                         <label for="comment" class="label-text">Опишіть яку послугу ви потрибуєте</label>
-                        <textarea id="comment" class="form-item textarea" name="textarea" placeholder="Яку послугу потребуеш дизайн, сайт чи SMM просування бізнесу?" required></textarea>
+                        <textarea 
+                            id="comment" 
+                            class="form-item textarea req" 
+                            name="textarea" 
+                            placeholder="Яку послугу потребуеш дизайн, сайт чи SMM просування бізнесу?" 
+                            required>
+                        </textarea>
                     </div>
 
-                    <div class="privacy-policy">
+                    <div class="privacy-policy checkbox">
                     <input 
                         type="checkbox" 
                         name="checkbox" 
                         id="checkbox"
-                        class="checkbox-input visually-hidden"
+                        class="checkbox-input visually-hidden req"
                         required
                     />
 
                     <label for="checkbox" class="text-privacy-policy">
                         Я приймаю положення та умови 
-                        <a href="/" class="link-privacy-policy">Privacy policy</a>
+                        <a href="/" class="link-privacy-policy">Політика конфіденційності</a>
                     </label>
                     </div>
 
@@ -294,4 +301,5 @@
     <!--JavaScript-->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script scr="./js/sendmail.js"></script>
 </html>

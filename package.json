@@ -2,9 +2,10 @@
   "name": "holiweb",
   "version": "1.0.0",
   "description": "HoLiWeb - компанія, яка спеціалізується на комплексній розробці веб-сайтів та веб-додатків під ключ. Просуваємо бізнес у соцмедіа (Facebook, Instagram, YouTube), що допомагає вашому бренду бути видимим і успішним в онлайн-просторі. Від UI/UX дизайну до SEO-оптимізації – ми забезпечимо максимальний результат для вашого бізнесу.",
+  "homepage": "https://holvas.github.io/holiweb/",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "server.js"
   },
   "keywords": [],
   "author": "",
