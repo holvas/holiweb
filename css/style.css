@@ -504,8 +504,8 @@ footer a:hover {
     border-radius: 2px;
 }
 
-.checkbox.error .text-privacy-policy::before {
-    box-shadow: 0 0 var(--red);
+.checkbox-input.error .text-privacy-policy::before {
+    box-shadow: 0 0 10px var(--red);
 }
 
 .text-privacy-policy {

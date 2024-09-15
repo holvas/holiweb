@@ -12,6 +12,11 @@ document.addEventListener('DOMContentLoaded', function() { //Стандартн�
     
     // Валідація форми
     let error = formValidate(form); // присвоєння змінній результату роботи функції formValidate
+    if (form === 0) {
+
+    } else {
+        alert("Заповніть обов'язкові поля.");
+    }
 }
 
     // Функція formValidate
@@ -41,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() { //Стандартн�
                 }
             }
         }
+            return error; // повертаємо значення error
     }
 
     // Додавання об'єкту клас error та батьківському об'єкту
