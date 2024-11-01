@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HoLiWeb</title>
+    <title>Дякуємо</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"/>
@@ -27,7 +27,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="./index.html" class="active">Пропонуємо</a></li>
+                    <li><a href="./index.html">Пропонуємо</a></li>
                     <li><a href="#aboutUs">Про нас</a></li>
                     <li><a href="#">Портфоліо</a></li>
                     <li><a href="#">Blog</a></li>
@@ -60,7 +60,7 @@
                         
                         <nav>
                             <ul class="mob-menu-list">
-                                <li class="mob-menu-item"><a class ="mob-menu-link active" href="./index.html">Пропонуємо</a></li>
+                                <li class="mob-menu-item"><a class ="mob-menu-link" href="./index.html">Пропонуємо</a></li>
                                 <li class="mob-menu-item"><a class ="mob-menu-link" href="#">Про нас</a></li>
                                 <li class="mob-menu-item"><a class ="mob-menu-link" href="#">Портфоліо</a></li>
                                 <li class="mob-menu-item"><a class ="mob-menu-link" href="#">Blog</a></li>
@@ -134,10 +134,10 @@
         <main>
             <!--ABOUT US-->
             <section class="service-text">
-                <h1 class="title-text">Допомагаємо вашому бізнесу бути видимим і успішним в онлайн-просторі</h1>
-                <!-- <h2 id="aboutUs">Дізнайся більше про компанію HoLiWeb</h2> -->
+                <h1 class="title-text">Дякуємо, ваш запит успішно відправлено!</h1>
                 <p>
-                    Компанія HoLiWeb – це ваш надійний партнер у сфері комплексної розробки веб-сайтів під ключ та просування бізнесу в інтернеті. Ми спеціалізуємось на наданні широкого спектру послуг, які допоможуть вашому бізнесу досягти успіху в онлайн-просторі. У сучасному світі важливо не лише створити якісний сайт або веб-додаток, але й забезпечити його видимість у пошукових системах, таких як Google. Наша команда експертів допомагає досягати цього завдяки інноваційним рішенням та використанню сучасних технологій.
+                    Вам потрібен бізнес, що виділяється в онлайн-світі та привертає увагу саме вашої цільової аудиторії? Ми пропонуємо комплексні послуги з дизайну, розробки та просування, що створять ефективну присутність вашого бренду в інтернеті. Наша команда спеціалістів готова розробити сучасний веб-дизайн, який підкреслить унікальність вашого бренду, зробить навігацію простою, а користувацький досвід приємним і легким. 
+                    Запрошуємо ознайомитись з нашим портфоліо!
                 </p>
             </section>
             <!--OUR SERVICES-->
@@ -177,16 +177,6 @@
                     
                 </div>
             </section>
-            <!--WHY HOLIWEB-->
-            <section class="service-text">
-                <h2>Чому обирають HoLiWeb?</h2>
-                <p class="item-service-text">
-                    Наша компанія орієнтована на результат і прагне зробити все для того, щоб ваш бізнес досяг успіху в онлайн-просторі. Ми пропонуємо комплексні рішення, які включають розробку, оптимізацію та просування. Наша команда професіоналів завжди готова запропонувати інноваційні рішення, що допоможуть вашому бізнесу рости та розвиватися.
-                    З HoLiWeb ви отримаєте не просто сайт чи додаток, а повноцінний інструмент для досягнення бізнес-цілей та досягнення успіху бізнесу в онлайн-просторі.
-                    Зверніться до нас і переконайтесь у якості наших послуг вже сьогодні!
-                </p> 
-                <button class="btn modal-servise" data-modal-open>Розрахувати вартість послуги</button>
-            </section>
         </main>
 
         <!--FOOTER-->
@@ -225,7 +215,7 @@
                                 type="text" 
                                 name="username" 
                                 id="username"
-                                class="form-item" 
+                                class="form-item req" 
                                 required 
                             />
                             <svg class="form-icons" width="20" height="20">
@@ -243,7 +233,7 @@
                                 name="phone" 
                                 placeholder="+380(00)-000-00-00"
                                 id="phone"
-                                class="form-item"
+                                class="form-item req"
                                 required
                             />
                             <svg class="form-icons" width="20" height="20">
@@ -259,7 +249,7 @@
                                 type="email" 
                                 name="email" 
                                 id="email"
-                                class="form-item email"
+                                class="form-item req email"
                                 required
                             />
                             <svg class="form-icons" width="20" height="20">
@@ -283,7 +273,7 @@
                         type="checkbox" 
                         name="checkbox" 
                         id="checkbox"
-                        class="checkbox-input visually-hidden"
+                        class="checkbox-input visually-hidden req"
                         required
                     />
 
@@ -297,7 +287,7 @@
                     <input type="checkbox" name="botcheck" class="hidden" style="display: none;"> -->
 
                     <!-- Custom Confirmation / Success Page -->
-                    <input type="hidden" name="redirect" value="./thanks.html">
+                    <input type="hidden" name="redirect" value="http://127.0.0.1:5500/index.html"> -->
 
                     <button class="services-button btn-form-send" type="submit">
                         <span class="text-btn">Send</span> 
@@ -307,8 +297,4 @@
         </div>
     </body>
 
-    <!--JavaScript-->
-    <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-    <script scr="./js/sendmail.js"></script>
 </html>
