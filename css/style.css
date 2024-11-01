@@ -395,8 +395,8 @@ footer a:hover {
 .modal-close-btn {
     position: absolute;
     display: flex;
-    background-color: #E7E9FC;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--color-light);
+    border: 1px solid var(--form-item);
     border-radius: 50%;
     width: 24px;
     height: 24px;
@@ -404,11 +404,12 @@ footer a:hover {
     right: 16px;
     justify-content: center;
     align-items: center;
-    transition: background-color 250ms var(--transition);
+    transition: background-color var(--transition);
 }
 
 .modal-close-btn:is(:hover, :focus) {
-    background-color: var(--primary);
+    background-color: var(--form-item);
+    border-color: var(--focus);
     fill: var(--light);
 }
 
